@@ -1,47 +1,98 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<style>
-h1 {text-align: center;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szymon Borkowski - CV</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <header>
+    <div class="container">
+      <h1>Szymon Borkowski</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<h1>Welcome to my recipe website!</h1>
-<p>Made by Szymon Borkowski</p>
-<p><a href="https://github.com/szymonborkowski/szymonborkowski.github.io">
-  GitHub repository for this project</a></p>
-<p><a href="https://www.linkedin.com/in/szymon-borkowski-8419171b3/?originalSubdomain=ie">
-  My LinkedIn page</a></p>
-<p><a href = "mailto: szymonborkowski10@gmail.com">
-  Contact me by email</a></p>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: szymonborkowski10@gmail.com</p>
+      <p>Phone: +353 89 225 7558</p>
+    </div>
+  </section>
 
-<hr>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a versatile engineer with a diverse skill set acquired through hands-on experience and academic pursuits. My expertise encompasses various domains, from electronics to mechanical engineering.
+        Through independent projects and collaborative efforts, I have honed my ability to conceptualize, design, and execute complex technical solutions. 
+        Whether it's integrating sensors for data collection, conducting structural analyses, or optimizing vehicle configurations for performance, I thrive in problem-solving environments.
+        My proficiency extends beyond technical domains; I am adept at research, procurement, and assembly processes, as evidenced by my experience assembling desktop computers.
+        Additionally, my practical skills in bicycle maintenance and home electronics repair demonstrate my ability to troubleshoot and resolve issues effectively.
+        With a keen eye for detail and a passion for innovation, I am well-equipped to tackle challenges and contribute positively to any engineering or project management endeavor.
+      </p>
+    </div>
+  </section>
 
-<h2>Recipes</h2>
-<p>Click any of the links in the following list:</p>
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Masters Project - Doctor Distance Tracking for Occupational Exposure Measurement (Ongoing)</h3>
+        <p><strong>Project Start Date:</strong> September 2023</p>
+        <p><strong>Project End Date:</strong> May 2024</p>
+        <p><strong>Project Duration:</strong> 9 months</p>
+        <p><strong>Project Team Size:</strong> Solo Project</p>
+        <ul>
+          <li>Collaborated with the Medical Physics and Engineering Department in the University Hospital Galway.</li>
+          <li>Utilised a camera with depth-sensing technology for non-invasive measurement of radiation exposure.</li>
+          <li>Utilised previous research to create a map correlating radiation exposure with cardiologist location.</li>
+          <li>Integrated an object detection algorithm with distance measurement feature of an Intel RealSense resulting in successful tracking of cardiologists throughout surgery.</li>
+        </ul>        
+        <a href="htmlprojects/mastersproject.html">View Project</a>
+      </div>
+      
+      <div class="project">
+        <h3>Arduino Nano Lander Project</h3>
+        <p><strong>Project Start Date:</strong> January 2020</p>
+        <p><strong>Project End Date:</strong> March 2020</p>
+        <p><strong>Project Duration:</strong> 3 months</p>
+        <p><strong>Project Team Size:</strong> 2 members</p>
+        <ul>
+          <li>Integrated Barometer, Accelerometer, Gyroscope, and Temperature sensors for comprehensive environmental data collection.</li>
+          <li>Designed and constructed a miniature parachute system to facilitate controlled descent, enabling data gathering during descent.</li>
+          <li>Established wireless communication between emitter and receiver units for real-time data transmission.</li>
+          <li>Implemented data processing techniques including data smoothing and graphical representation for analysis.</li>
+        </ul>        
+        <a href="#">View Project</a>
+      </div>
 
-<ul>
-  <li><a href="BakedFetaPasta.html">Baked Feta Pasta</a></li>
-  <li><a href="HarissaChickenChickpeas.html">
-    Chicken with crushed harissa chickpeas</a></li>
-  <li><a href="QuinoaWithVegetables.html">Quinoa with vegetables</a></li>
-  <li><a href="BeefStew.html">Beef Stew with vegetables</a></li>
-  <li><a href="ChorizoPasta.html">Chorizo pasta with spinach and peppers</a></li>
-</ul>
+      <div class="project">
+        <h3>Arduino Sequence Detector</h3>
+        <p><strong>Project Start Date:</strong> October 2022</p>
+        <p><strong>Project End Date:</strong> December 2022</p>
+        <p><strong>Project Duration:</strong> 3 months</p>
+        <p><strong>Project Team Size:</strong> Solo project </p>
+        <ul>
+          <li>Implemented a state machine using basic logic gates and flip flops to iterate through a programmed sequence, manually clocked and verified by LED indication.</li>
+          <li>Enhanced the system by integrating an Arduino for automated sequence feeding, clocking, and output reading.</li>
+          <li>Developed a GUI using the Processing IDE, facilitating interactive control for inputting bits, clocking circuits, and verifying sequence accuracy.</li>
+        </ul>
+        <a href="#">View Project</a>
+      </div>
 
-<hr>
+    </div>
+  </section>
 
-<h2>Lunch inspiration</h2>
-<p>Choose a few ingredients and make sandwiches</p>
-<a href="SandwichInspirations.html">Inspirations for sandwiches</a>
-
-<hr>
-<h2>Salads</h2>
-<p> Long list of salads - feel free to combine ingredients from different salads</p>
-<a href="Salads.html">List of salads</a>
-
+  <script src="script.js"></script>
 </body>
 </html>
