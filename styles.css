@@ -75,4 +75,10 @@
   .project p {
     margin-bottom: 10px; /* Add margin at the bottom of paragraphs */
   }
+
+  .image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
   
