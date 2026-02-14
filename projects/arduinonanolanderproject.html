@@ -3,43 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masters Project</title>
+  <title>Arduino Nano Lander</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
     <header>
       <div class="container">
-        <h1>Arduino Nano Lander Project</h1>
+        <h1>Project Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">Back to Home</a></li>
             </ul>
         </nav>
       </div>
     </header>
 
-    <section id="projectdetail">
-      <div class="container">
-          <h2>Project Details</h2>
-          <p><strong>Project Start Date:</strong> January 2020</p>
-          <p><strong>Project End Date:</strong> March 2020</p>
-          <p><strong>Project Duration:</strong> 3 months</p>
-          <p><strong>Project Team Size:</strong> 2 members</p>
-          <ul>
-            <li>Integrated Barometer, Accelerometer, Gyroscope, and Temperature sensors for comprehensive environmental data collection.</li>
-            <li>Designed and constructed a miniature parachute system to facilitate controlled descent, enabling data gathering during descent.</li>
-            <li>Established wireless communication between emitter and receiver units for real-time data transmission.</li>
-            <li>Implemented data processing techniques including data smoothing and graphical representation for analysis.</li>
-          </ul>  
-      </div>
-    </section>
+    <div class="site-wrapper">
+      <main>
+        <article id="projectdetail">
+            <h2>Arduino Nano Atmospheric Lander</h2>
+            
+            <br>
 
-    <footer>
-      <div class="container"
-        <p>&copy; 2024 Szymon Borkowski</p>
-      </div>
-    </footer>
+            <div class="project-meta-box">
+              <p><strong>Timeline:</strong> Jan 2020 - Mar 2020</p>
+              <p><strong>Team Size:</strong> 2 Members</p>
+              <p><strong>Hardware:</strong> Arduino Nano, RF Modules, IMU Sensors</p>
+              <p><strong>Tech Stack:</strong> C++, Arduino IDE, Data Processing (Excel/Python)</p>
+            </div>
 
+            <br>
+
+            <div class="project-description">
+              <h3>Technical Overview</h3>
+              <p>This project involved designing a self-contained telemetry unit capable of gathering atmospheric data during a controlled parachute descent and transmitting it wirelessly to a ground station.</p>
+              
+              <ul>
+                <li><strong>Sensor Integration:</strong> Integrated a suite of sensors via I2C/SPI, including:
+                  <ul>
+                    <li><strong>Barometer:</strong> For altitude and pressure tracking.</li>
+                    <li><strong>IMU (Accel/Gyro):</strong> For orientation and descent stability analysis.</li>
+                    <li><strong>Temperature:</strong> For environmental profiling.</li>
+                  </ul>
+                </li>
+                <li><strong>Recovery System:</strong> Designed and tested a miniature parachute deployment system to ensure a controlled descent rate for stable data sampling.</li>
+                <li><strong>Wireless Telemetry:</strong> Established a radio frequency (RF) link between the Lander (Emitter) and Ground Station (Receiver) for real-time monitoring.</li>
+                <li><strong>Data Analytics:</strong> Post-processed raw sensor data using smoothing algorithms (Moving Averages) to generate clean graphical representations of the flight profile.</li>
+              </ul> 
+            </div>
+        </article>
+
+      </main>
+
+      <br>
+
+      <footer>
+        <div class="container">
+            <p>&copy; 2026 Szymon Borkowski</p>
+        </div>
+      </footer>
+    </div>
 </body>
 </html>

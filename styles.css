@@ -1,84 +1,126 @@
-/* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: auto;
-    padding: 0 20px;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    font-size: 2rem;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  section {
-    padding: 40px 0;
-  }
-  
-  section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .project {
-    margin-bottom: 20px;
-  }
-  
-  .project h3 {
-    margin-bottom: 10px;
-  }
-  
-  .project a {
-    display: inline-block;
-    padding: 5px 10px;
-    background: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .project ul {
-    margin-bottom: 20px; /* Add margin at the bottom of the list */
-    line-height: 2; /* Set line height to 1.5 times the font size */
-  }
-  
-  .project p {
-    margin-bottom: 10px; /* Add margin at the bottom of paragraphs */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .image{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    }
-  
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f6; /* Page background color */
+}
+
+/* Full-Width Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%; /* Spans the entire screen */
+}
+
+/* This keeps the text inside the header aligned with the box below */
+.container {
+  max-width: 900px; 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* The Box Content */
+.site-wrapper {
+  max-width: 900px;
+  margin: 40px auto; /* "auto" centers the box; 40px adds space from the header */
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+
+/* 4. Sections & Projects */
+section {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 40px;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.project {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+.project a {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 920px) {
+  .site-wrapper {
+    margin: 20px; /* Adds a small gap on tablets/phones */
+  }
+}
+
+@media (max-width: 600px) {
+  .site-wrapper {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+  }
+}
+
+.poster-container {
+  width: 100%;         /* Forces container to take full available width */
+  box-sizing: border-box; /* Ensures padding doesn't make it wider than 100% */
+  margin-top: 30px;
+  background: #fff;    /* White frame background */
+  border: 1px solid #eee; /* Subtle border for the frame */
+  padding: 10px;       /* The space between the border and the image */
+  border-radius: 8px;  /* Rounded corners to match the main box */
+  overflow: hidden;    /* Extra safety: clips anything that tries to spill out */
+}
+
+.image {
+  display: block;
+  width: 100%;      /* Forces image to stretch to fill the container width */
+  max-width: 100%;  /* Redundancy to ensure it never overflows */
+  height: auto;     /* CRITICAL: maintains aspect ratio so it doesn't squish */
+  border-radius: 4px; /* Slight rounding on the image corners itself */
+}
+
+/* This targets lists inside project description */
+.project-description ul {
+  padding-left: 1.2rem;
+  margin-top: 10px;
+}
+
+.project-description li {
+  margin-bottom: 4px;
+}
